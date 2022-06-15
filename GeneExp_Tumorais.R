@@ -1,5 +1,5 @@
-setwd("/Users/taniapeniche/Desktop/Project/data")
-load("/Users/taniapeniche/Desktop/Project/data/AllData.RData")
+setwd("[path]/data")
+load("[path]/AllData.RData")
 
 #load all the gene expression
 geneExp_Tum<-geneExp
@@ -21,8 +21,8 @@ for (i in 1:length(geneExp_Tum)){
 save(geneExp_Tum, file = "geneExp_Tum.RData")
 
 #Boxplot
-setwd("/Users/taniapeniche/Desktop/Project/Results")
-load("/Users/taniapeniche/Desktop/Project/data/AllData.RData")
+setwd("[path]/Results")
+load("[path]/AllData.RData")
 
 plotData_Tum<- lapply(geneExp_Tum, as.numeric)
 boxplot(plotData_Tum,col="#2FABCE", las=2, outline=FALSE,
