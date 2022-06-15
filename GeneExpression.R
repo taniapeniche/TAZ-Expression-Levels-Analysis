@@ -1,5 +1,5 @@
 # Get all the file names and cancer types
-setwd("/Users/taniapeniche/Desktop/Project/data")
+setwd("[path]/data")
 fileNames <- dir(pattern ="fpkm")
 cancerTypes <- gsub("TCGA-", "", gsub("_htseq_fpkm-uq.tab", "", fileNames))
 # Create a R list to save all information
@@ -21,8 +21,8 @@ save(geneExp, file = "geneExp.RData")
 
 
 #boxplot
-setwd("/Users/taniapeniche/Desktop/Project/Results")
-#load("/Users/taniapeniche/Desktop/Project/data/AllData.RData")
+setwd("[path]/Results")
+#load("[path]/AllData.RData")
 
 plotData <- lapply(geneExp, as.numeric)
 boxplot(plotData,col="#CA4DB5", outline=FALSE, las=2,
