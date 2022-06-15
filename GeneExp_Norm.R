@@ -1,5 +1,5 @@
-setwd("/Users/taniapeniche/Desktop/Project/data")
-load("/Users/taniapeniche/Desktop/Project/data/AllData.RData")
+setwd("[path]/data")
+load("[path]/AllData.RData")
 
 #load all the gene expression
 geneExp_Norm<-geneExp
@@ -21,8 +21,8 @@ for (i in 1:length(geneExp_Norm)){
 save(geneExp_Norm, file = "geneExp_Norm.RData")
 
 #Boxplot
-setwd("/Users/taniapeniche/Desktop/Project/Results")
-load("/Users/taniapeniche/Desktop/Project/data/geneExp_Norm.RData")
+setwd("[path]/Results")
+load("[path]/geneExp_Norm.RData")
 
 plotData_Norm<- lapply(geneExp_Norm, as.numeric)
 boxplot(plotData_Norm,col="#8EBC2B", outline=FALSE,
