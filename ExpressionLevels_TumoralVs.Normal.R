@@ -1,5 +1,5 @@
-load("/Users/taniapeniche/Desktop/Project/data/AllData.RData")
-setwd("/Users/taniapeniche/Desktop/Project/Results")
+load("[path]/AllData.RData")
+setwd("[path]/Results")
 
 
 #Select the data####
