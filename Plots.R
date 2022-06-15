@@ -1,6 +1,6 @@
 #import + twd
-load("/Users/taniapeniche/Desktop/Project/data/AllData.RData")
-setwd("/Users/taniapeniche/Desktop/Project/Results")
+load("[path]/AllData.RData")
+setwd("[path]/Results")
 
 #open w pdf
 pdf("Different Expresion Values.pdf")
