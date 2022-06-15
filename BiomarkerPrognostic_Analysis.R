@@ -1,6 +1,6 @@
-load("/Users/taniapeniche/Desktop/Project/PanCancer_GDC_clinicalInfo.RData")
-load("/Users/taniapeniche/Desktop/Project/data/AllData.RData")
-load("/Users/taniapeniche/Desktop/Project/data/AllData_II.RData")
+load("[path]/PanCancer_GDC_clinicalInfo.RData")
+load("[path]/AllData.RData")
+load("[path]/AllData_II.RData")
 
 # Association of expression levels and tumor stage####
 
